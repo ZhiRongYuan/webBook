@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>负margin</title>
+    <style>
+        body,ul,li{ padding:0; margin:0;}
+        ul,li{ list-style:none;}
+        .container{ height:210px; width:460px; border:5px solid #000;}
+        ul{ height:210px; overflow: hidden; margin-right: -20px}/*一个负的margin-right,相当于把ul的宽度增加了20px*/
+        li{ height:100px; width:100px; background:#09F; float:left; margin-right:20px; margin-bottom:10px;}
+
+
+        .floatWrap{zoom:1}
+        .floatWrap:after{
+            content: '';
+            display: block;
+            clear:both;
+        }
+
+        .floatWrap > div{float: left; width: 100px; height: 100px; margin-right: -50px}
+    </style>
+</head>
+<body>
+    <div>
+        <div style="width: 100px; height: 100px; background: red;margin-bottom: -20px "></div>
+    </div>
+    <div style="width: 100px;height: 100px;background: rebeccapurple"></div>
+
+    <div style="width: 400px;height: 200px;background: red;margin: auto">
+        <div style="height: 100%;margin-right: -100px"></div>
+    </div>
+
+    <div class="container">
+        <ul>
+            <li>子元素1</li>
+            <li>子元素2</li>
+            <li>子元素3</li>
+            <li>子元素4</li>
+            <li>子元素5</li>
+            <li>子元素6</li>
+            <li>子元素7</li>
+            <li>子元素8</li>
+        </ul>
+    </div>
+
+    <div class="floatWrap">
+        <div style="background: red"></div>
+        <div style="background: azure"></div>
+        <div style="background: darkcyan"></div>
+    </div>
+
+    <div style="width: 100px; height: 100px;background: green">
+
+    </div>
+</body>
+</html>

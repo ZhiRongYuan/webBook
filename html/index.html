@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+            width: 80%;
+            margin: 0 auto;
+        }
+        #main{
+            width: 100%;
+            float: left;
+            background: goldenrod;
+        }
+        #left{
+            width: 200px;
+            height: 500px;
+            float: left;
+            background: red;
+            margin-left: -100%;
+        }
+        #right{
+            width: 200px;
+            height: 500px;
+            float: left;
+            background: green;
+            margin-left: -200px;
+        }
+
+        #content{
+            height: 500px;
+            margin: 0 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <section id="main">
+            <div id="content"></div>
+        </section>
+        <aside id="left"></aside>
+        <aside id="right"></aside>
+    </div>
+</body>
+</html>
