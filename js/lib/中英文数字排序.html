@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中英文数字排序</title>
+    <script src="sortCompare.js"></script>
+</head>
+<body>
+    <script>
+        function compare(val1,val2) {
+            // 转换为拼音
+            val1 = Pinyin.getFullChars(val1).toLowerCase();
+            val2 = Pinyin.getFullChars(val2).toLowerCase();
+
+            // 获取较长的拼音的长度
+            var length =  val1.length > val2.length ? val1.length:val2.length ;
+
+            // 依次比较字母的unicode码，相等时返回0，小于时返回-1，大于时返回1
+            for(var i = 0; i < length; i++ ) {
+                var differ = val1.charCodeAt(i) - val2.charCodeAt(i);
+                if(differ == 0) {
+                    continue;
+                }else {
+                    if(val1.charAt(i) == '_' ) {
+                        return -1;
+                    }
+                    return differ;
+                }
+            }
+            if(i == length) {
+                return val1.length - val2.length;
+            }
+        }
+
+        const compareArray = ['中国', '美国', '印度', '阿富汗', '俄罗斯', '日本', '韩国', '新加坡', '朝鲜', '印度尼西亚', 'America'];
+
+        document.body.innerHTML = compareArray.sort(compare);
+</script>
+</body>
+</html>
