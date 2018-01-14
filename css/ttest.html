@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://rs.ingageapp.com/static/img/favicon.ico"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- performance -->
+    <script>
+        window.BWEUM = {
+            info: {
+                "stand": true,
+                "agentType": "browser",
+                "agent": "bi-collector.oneapm.com/static/js/bw-send-411.4.5.js",
+                "beaconUrl": "bi-collector.oneapm.com/beacon",
+                "licenseKey": "eNbi7~7AYNNBa6rU",
+                "applicationID": 2273143
+            }
+        };
+    </script>
+    <title>销售易</title>
+    <link rel="bookmark" type="image/x-icon" href="https://rs.ingageapp.com/static/img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="https://rs.ingageapp.com/static/deploy/rk1.16590c1.css"/>
+    <link rel="stylesheet" type="text/css" href="https://rs.ingageapp.com/static/gcss/lib/jqwidgets/styles/jqx.base.c9605a8.css"/>
+    <link rel="stylesheet" type="text/css" href="https://rs.ingageapp.com/static/gcss/lib/jqwidgets/styles/jqx-base-rk-v2.c9a42dd.css"/>
+    <link rel="stylesheet" type="text/css" href="https://rs.ingageapp.com/static/gcss/lib/jquery-ui/1.11.3/jquery-ui.4c82566.css"/>
+    <link rel="stylesheet" type="text/css" href="https://rs.ingageapp.com/static/gcss/lib/jquery-ui/1.11.3/jquery-ui-rk.9e822e8.css"/>
+    <link rel="stylesheet" type="text/css" href="https://rs.ingageapp.com/static/deploy/rk2.31c790f.css"/>
+    <script>
+        window.FOCUSMEDIA = {
+            brandBelongId: 8001
+        };
+
+        window.RKHD = false;
+        window.WANXUE =  false;
+        window.FUGUODATONG =  false;
+        window.YiXueJiaoYu =  false;
+        window.DEFAULTS = {
+            USER_DEFAULT_ICON: 'https://rs.ingageapp.com/static/img/default_face.png',
+            TENANT_DEFULT_ICON: 'https://rs.ingageapp.com/static/img/v3.0/logo.png',
+            TENANT_CUSTOM_ICON: ''
+        };
+
+
+
+        window.SESSION = {
+            prj: 'web',
+            isDev: false,
+            user: {"id":880058,"icon":"/img/default_face.png","name":"强子","notify":1,"language-code":"zh","language":"zh-cn","type":0},
+            isPrm : false,
+            userConfig:{
+                isMobileFixUser:"false",
+            },
+            serviceConfig: {
+                workBench: ("0" === '1'),
+                userType: "sales"
+            },
+            fieldServiceConfig: {
+                dispatchPlatform: ("0" === '1')
+            },
+            company: '',
+            depart: {"id":526179,"groupId":59090480,"specialType":0,"name":"全公司","hasChild":true,"type":2},
+            isXsyCrmAdmin: false,
+            pcCode: 0,
+            tenantId: 326972,
+            tenantName: '大大科技',
+            tenantIcon: 'https://rs.ingageapp.com/static/img/v3.0/logo.png',
+            cometClientId: '1514099589574',
+            usingWebSocket: true,
+            currencyUnit: '元',
+            currencyUnit_resourceKey:'UNIT.settingCurrency.198172',
+            unitSetCurrencyMap: '',
+            keywords: {"apply":"审批","apply_resourceKey":"XdMDObj.apply","rescenter":"知识库","rescenter_resourceKey":"XdMDObj.rescenter","entitybelongtype":"标准业务类型","entitybelongtype_resourceKey":"XdMDObj.entityBelongType","invoice":"开票记录","invoice_resourceKey":"XdMDObj.invoice","activityrecord":"活动记录","activityrecord_resourceKey":"XdMDObj.activityrecord","privatemessage":"企业微信","privatemessage_resourceKey":"XdMDObj.privatemessage","lead":"销售线索","lead_resourceKey":"XdMDObj.lead","visit":"巡访记录","visit_resourceKey":"XdMDObj.visit","dayreport":"工作报告","dayreport_resourceKey":"XdMDObj.dayreport","highsea":"客户","highsea_resourceKey":"XdMDObj.account","highsea_appendResourceKey":"common.app.langpool","goalprodetail":"目标实例明细","goalprodetail_resourceKey":"XdMDObj.goalProDetail","leadhighsea":"销售线索","leadhighsea_resourceKey":"XdMDObj.lead","leadhighsea_appendResourceKey":"common.app.langpool","terminal":"终端","terminal_resourceKey":"XdMDObj.terminal","paymentplan":"回款计划","paymentplan_resourceKey":"XdMDObj.paymentplan","report":"报表","report_resourceKey":"XdMDObj.report","checkinmap":"签到地图","checkinmap_resourceKey":"XdMDMenu.common.app.checkinmap","partner":"合作伙伴","partner_resourceKey":"XdMDObj.partner","pricemanager":"价格表","pricemanager_resourceKey":"XdMDObj.priceManager","weekreport":"周报","weekreport_resourceKey":"XdMDObj.weekreport","bimanage":"数据看板","bimanage_resourceKey":"XdMDMenu.common.app.bimanage","workreport":"工作报告","workreport_resourceKey":"XdMDMenu.common.app.workreport","contract":"合同","contract_resourceKey":"XdMDObj.contract","attendance":"考勤统计","attendance_resourceKey":"XdMDObj.attendance","monthreport":"月报","monthreport_resourceKey":"XdMDObj.monthreport","orderproduct":"订单明细","orderproduct_resourceKey":"XdMDObj.orderProduct","agent":"代理商","agent_resourceKey":"XdMDObj.agent","goal":"目标简版","goal_resourceKey":"XdMDObj.goal","408":"价格表明细","408_resourceKey":"XdMDObj.priceDetail","407":"价格表","407_resourceKey":"XdMDObj.priceManager","case":"服务个案","case_resourceKey":"XdMDObj.case","dashboard":"仪表盘","dashboard_resourceKey":"XdMDObj.dashboard","userprofile":"用户Profile","userprofile_resourceKey":"XdMDObj.userprofile","trackanalysis":"轨迹分析","trackanalysis_resourceKey":"XdMDObj.trackanalysis","expenseaccount":"报销单","expenseaccount_resourceKey":"XdMDObj.expenseaccount","pricedetail":"价格表明细","pricedetail_resourceKey":"XdMDObj.priceDetail","department":"部门","department_resourceKey":"XdMDObj.department","systemcount":"系统使用概况","systemcount_resourceKey":"XdMDMenu.common.app.systemcount","workreportstatistic":"工作报告统计","workreportstatistic_resourceKey":"XdMDObj.workreportstatistic","solution":"解决方案","solution_resourceKey":"XdMDObj.solution","contact":"联系人","contact_resourceKey":"XdMDObj.contact","salesanalysis":"销售绩效分析","salesanalysis_resourceKey":"XdMDObj.salesanalysis","lookopportunity":"找商机","lookopportunity_resourceKey":"XdMDMenu.common.app.lookopportunity","order":"订单","order_resourceKey":"XdMDObj.order","busitype":"定制业务类型","busitype_resourceKey":"XdMDObj.busiType","feed":"动态","feed_resourceKey":"XdMDObj.feed","campaign":"市场活动","campaign_resourceKey":"XdMDObj.campaign","notice":"消息","notice_resourceKey":"XdMDObj.notice","servicedashboard":"客服仪表盘","servicedashboard_resourceKey":"XdMDMenu.common.app.servicedashboard","payment":"回款记录","payment_resourceKey":"XdMDObj.payment","opportunityproduct":"商机明细","opportunityproduct_resourceKey":"XdMDObj.opportunityProduct","forecast":"销售预测","forecast_resourceKey":"XdMDObj.forecast","task":"任务","task_resourceKey":"XdMDObj.task","approval":"审批","approval_resourceKey":"XdMDMenu.common.app.approval","visitcollect":"巡访统计","visitcollect_resourceKey":"XdMDObj.visitcollect","colleague":"通讯录","colleague_resourceKey":"XdMDObj.colleague","product":"产品","product_resourceKey":"XdMDObj.product","schedule":"日程","schedule_resourceKey":"XdMDObj.schedule","opportunity":"销售机会","opportunity_resourceKey":"XdMDObj.opportunity","expense":"费用","expense_resourceKey":"XdMDObj.expense","leadhighseareport":"销售线索","leadhighseareport_resourceKey":"XdMDObj.lead","account":"客户","account_resourceKey":"XdMDObj.account","announcementpartner":"合作伙伴公告","announcementpartner_resourceKey":"partner.announcement","competitor":"竞争对手","competitor_resourceKey":"XdMDObj.competitor","group":"群组","group_resourceKey":"XdMDObj.group","user":"用户","user_resourceKey":"XdMDObj.user","accounthighseareport":"客户","accounthighseareport_resourceKey":"XdMDObj.account"},
+            hasPrmContentAccess: '0',
+
+            resDomain: 'https://rs.ingageapp.com',
+            menuData: {"foldCrm":0,"foldMenu":0},
+            guideData: {"userGuide":"0","foldBtn":1,"unFoldBtn":1,"oaMenu":1,"oaFoldMenu":1},
+            menuItems: [{"id":9,"icon":"app_account","name":"客户","name_resourceKey":"XdMDObj.account","link":"account.action"}, {"id":10,"icon":"app_opp","name":"商机","name_resourceKey":"XdMDObj.opportunity","link":"opportunity.action"}, {"id":11,"icon":"app_contact","name":"联系人","name_resourceKey":"XdMDObj.contact","link":"contact.action"}, {"id":12,"icon":"app_contract","name":"合同","name_resourceKey":"XdMDObj.contract","link":"contract.action"}, {"id":13,"icon":"app_market","name":"市场活动","name_resourceKey":"XdMDObj.campaign","link":"campaign.action"}, {"id":14,"icon":"app_leads","name":"线索","name_resourceKey":"XdMDObj.lead","link":"lead.action"}, {"id":16,"icon":"app_enemy","name":"竞争对手","name_resourceKey":"XdMDObj.competitor","link":"competitor.action"}, {"id":19,"icon":"app_product","name":"产品","name_resourceKey":"XdMDObj.product","link":"product.action"}, {"id":22,"icon":"app_activityrecord","name":"活动记录","name_resourceKey":"XdMDObj.activityrecord","link":"activityrecord.action"}, {"id":26,"icon":"app_goal","name":"目标简版","name_resourceKey":"XdMDObj.goal","link":"goal.action"}, {"id":37,"icon":"app_paymentplan","name":"回款计划","name_resourceKey":"XdMDObj.paymentplan","link":"paymentplan.action"}, {"id":43,"icon":"price","name":"价格表","name_resourceKey":"XdMDObj.priceManager","svgId":1123,"svgColor":"#ffcc00","link":"standard_407.action"}, {"id":34,"icon":"app_salesanalysis","name":"销售绩效分析","name_resourceKey":"XdMDObj.salesanalysis","link":"salesanalysis.action"}, {"id":20,"icon":"app_yibiao","name":"仪表盘","name_resourceKey":"XdMDObj.dashboard","link":"dashboard.action"}, {"id":21,"icon":"app_baobiao","name":"报表","name_resourceKey":"XdMDObj.report","link":"report.action"}, {"id":33,"icon":"app_workreportstatistic","name":"工作报告统计","name_resourceKey":"XdMDObj.workreportstatistic","link":"workreportstatistic.action"}, {"id":35,"icon":"app_attendance","name":"考勤统计","name_resourceKey":"XdMDObj.attendance","link":"attendance.action"}, {"id":39,"icon":"app_checkinmap","name":"签到地图","name_resourceKey":"XdMDMenu.common.app.checkinmap","link":"checkinmap.action"}],
+            totalOaViewAuth: 'true',
+            favoriteMenuItems: [{"id":9,"icon":"app_account","name":"客户","name_resourceKey":"XdMDObj.account","link":"account.action"}, {"id":37,"icon":"app_paymentplan","name":"回款计划","name_resourceKey":"XdMDObj.paymentplan","link":"paymentplan.action"}],
+            oaMenuItems: [{"name":"schedule"}, {"name":"task"}, {"name":"rescenter"}, {"name":"approval"}, {"name":"workreport"}, {"name":"colleague"}, {"name":"group"}, {"name":"privateMessage"}],
+            hasCrmAccess: true,
+            privateMsgUnRead: 0,
+            tenantType: '0',
+            partnerAccess: {"knowledgemanagement":false,"addressbook":false,"prmLic":false},
+            documentAllAccess:true,
+            partVisible:false,
+            financeStartMonth: '1',
+            logoUrl: '',
+            navValue: '',
+            callCenterObj: '{"phone":0,"record":0,"report":0,"monitor":0}',
+            pageStartTime: new Date(),
+            currentTime: '1514099589583',
+            serverTimeOffset: (new Date()) * 1 - 1514099589583,
+            currentVersion: '4.6',
+            languageUrl:'https://xsybucket.s3.cn-north-1.amazonaws.com.cn/%2F-101/FRONT_WEB/zh/%2F2017/12/13/d38e9f33-332e-400d-bc87-45cbb3221ab3.js',
+            userTimezoneCfg: '{"resourceKey":"TZ.asiaShanghai","dstOffset":0,"displayName_resourceKey":"China Standard Time","offset":28800000,"timezoneId":"Asia/Shanghai","apiKey":"Asia/Shanghai","effectiveStartTime":0}'
+        };
+    </script>
+</head>
+<body class="lang_cn">
+<section id="container" class="wrapper theme-default">
+    <aside id="pageleft">
+        <!--sidebar-menu start-->
+        <!-- unfold-->
+        <nav id="pageleft_unfold" class="nav-menu"
+        >
+            <!--logo start-->
+            <div class="nav-menu-header">
+                <div class="logo">
+                    <a href="/index.action" class="logo-img">
+                        <img class="logo-pic" src="" style="display:none;"></img>
+                        <span class="logo-pic"></span>
+                    </a>
+                    <a id="pageleft_fold_btn" href="javascript:" title="收起导航" class="sidebar-toggle"><span></span></a>
+                </div>
+            </div>
+            <!--logo end-->
+            <!--sidebar-menu start-->
+            <div class="nav-menu-body">
+                <div class="sub-menu">
+                    <!--index-page start-->
+                    <div class="page-menu">
+                        <ul class="oa-page">
+                            <li onclick="window.location.href='/index.action'" title="首页">
+                                <div class="page-link selected">
+                                    <a href="/index.action" style="display:block;">
+                                        <span class="home"></span>
+                                        首页</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--index-page end-->
+                        <!--crm-page start-->
+                        <ul class="crm-page all-menu">
+                            <li title="CRM">
+                                <div class="page-link ">
+                                    <a>
+                                        <span class="crm" menu-title="CRM"></span>
+                                        CRM</a>
+
+                                    <div class="crm-page-toolbar">
+                                        <!-- <span class="menu-setting-span"> -->
+                                        <a href="javascript:;" data-act="crm_menu_setting" class="menu-setting"
+                                           title="CRM菜单管理"></a>
+                                        <!-- </span> -->
+                                        <a href="javascript:;" data-act="crm_menu_dropdown"
+                                           class="menu-chevron-down menu-chevron-up"></a>
+                                    </div>
+                                </div>
+                                <!-- <ul id="pg_crm_menu" class="nav-menu-crm" style="display:block;" >
+
+                  <li menuid="9" >
+                      <a href="/account.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">客户</a>
+                    </li>
+                  <li menuid="10" >
+                      <a href="/opportunity.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">商机</a>
+                    </li>
+                  <li menuid="11" >
+                      <a href="/contact.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">联系人</a>
+                    </li>
+                  <li menuid="12" >
+                      <a href="/contract.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">合同</a>
+                    </li>
+                  <li menuid="13" >
+                      <a href="/campaign.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">市场活动</a>
+                    </li>
+                  <li menuid="14" >
+                      <a href="/lead.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">线索</a>
+                    </li>
+                  <li menuid="16" >
+                      <a href="/competitor.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">竞争对手</a>
+                    </li>
+                  <li menuid="19" >
+                      <a href="/product.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">产品</a>
+                    </li>
+                  <li menuid="22" >
+                      <a href="/activityrecord.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">活动记录</a>
+                    </li>
+                  <li menuid="26" >
+                      <a href="/goal.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">目标简版</a>
+                    </li>
+                  <li menuid="37" >
+                      <a href="/paymentplan.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">回款计划</a>
+                    </li>
+                  <li menuid="43" >
+                      <a href="/standard_407.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">价格表</a>
+                    </li>
+                  <li menuid="34" >
+                      <a href="/salesanalysis.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">销售绩效分析</a>
+                    </li>
+                  <li menuid="20" >
+                      <a href="/dashboard.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">仪表盘</a>
+                    </li>
+                  <li menuid="21" >
+                      <a href="/report.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">报表</a>
+                    </li>
+                  <li menuid="33" >
+                      <a href="/workreportstatistic.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">工作报告统计</a>
+                    </li>
+                  <li menuid="35" >
+                      <a href="/attendance.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">考勤统计</a>
+                    </li>
+                  <li menuid="39" >
+                      <a href="/checkinmap.action" onclick="_hmt.push(['_trackEvent', 'nav_menu', 'crm', '大大科技'])">签到地图</a>
+                    </li>
+                  </ul> -->
+                            </li>
+                        </ul>
+                        <!--统计分析 start-->
+                        <ul class="count-page">
+                            <li title="统计分析">
+                                <div class="page-link ">
+                                    <a>
+                                        <span class="count"></span>统计分析</a>
+
+                                    <div class="crm-page-toolbar">
+                                        <a href="javascript:;" class="menu-chevron-down"></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--crm-page end-->
+                    <span class="sub-menu-divide"></span>
+                    <!--menu-item-work start-->
+                    <!--menu-item-history start-->
+                    <div class="all-menu shortcut-menu">
+                        <h3>常用</h3>
+                        <ul id="pg_common_menu" class="menu-common-use">
+                        </ul>
+                        <h3 style="display:none;">最近访问</h3>
+                        <ul id="pg_history_menu" class="menu-item-history" style="display:none;">
+                        </ul>
+                        <!--menu-item-history end-->
+                    </div>
+                </div>
+
+                <!--menu-item-history end-->
+                <a href="javascript:;" class="more-page-menu" style="display:none;">
+                    <span>更多内容</span>
+                </a>
+            </div>
+            <!--account-mgt start-->
+            <div class="nav-menu-footer">
+                <div class="admin-info">
+                    <a href="javascript:;" class="admin-avatar"><img
+                            src="https://rs.ingageapp.com/static/img/default_face.png"
+                            class="userpic" alt="强子"></a>
+
+                    <div class="personal-info">
+                        <a href="javascript:;">
+                            <span class="peopel-name">强子</span>
+                            <span class="company-name">大大科技</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="account-mgt">
+                    <div class="set-pop">
+                        <a data-act="pg_setting_btn" href="javascript:;" class="setting" title="设置"></a>
+                        <a data-act="pg_help_btn" href="javascript:;" class="help" title="帮助"></a>
+                        <a data-act="pg_application_btn" href="javascript:;" class="application" title="切换应用"
+
+                           style="display:none"
+
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <!--account-mgt end-->
+        </nav>
+
+        <!-- fold收折状态-->
+        <nav id="pageleft_fold" class="nav-menu nav-menu-up"
+        >
+            <!--logo start-->
+            <div class="nav-menu-header">
+                <div id="pageleft_unfold_btn" class="logo">
+                    <a href="javascript:" title="展开导航" class="sidebar-toggle"><span></span></a>
+                </div>
+            </div>
+            <!--logo end-->
+            <!--sidebar-menu start-->
+            <div class="nav-menu-body">
+                <div class="sub-menu">
+                    <!--index-page start-->
+                    <div class="page-menu">
+                        <ul class="oa-page">
+                            <li>
+                                <div class="page-link selected">
+                                    <a href="/index.action" title="首页">
+                                        <span class="home"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--index-page end-->
+                        <!--crm-page start-->
+                        <ul class="crm-page all-menu">
+                            <li>
+                                <div class="page-link ">
+                                    <a href="javascript:;" data-act="fold_crm_toggle">
+                                        <span class="crm" menu-title="CRM"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="count-page">
+                            <li>
+                                <div class="page-link ">
+                                    <a href="javascript:;">
+                                        <span class="count"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--crm-page end-->
+                    <span class="sub-menu-divide"></span>
+                    <!--menu-item-work start-->
+                    <!--menu-item-work end-->
+                    <!--menu-item-history start-->
+                    <div class="shortcut-menu page-menu all-menu" style="height:450px;">
+                        <ul>
+                            <li>
+                                <div class="page-link">
+                                    <a href="javascript:;" data-act="fold_common_toggle">
+                                        <span class="common"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-link">
+                                    <a href="javascript:;" data-act="fold_history_toggle">
+                                        <span class="history"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--menu-item-history end-->
+                </div>
+            </div>
+            <!--account-mgt start-->
+            <div class="nav-menu-footer">
+                <div class="admin-info">
+                    <a href="javascript:;" class="admin-avatar"><img
+                            src="https://rs.ingageapp.com/static/img/default_face.png"
+                            class="userpic" alt="强子"></a>
+                </div>
+                <div class="account-mgt">
+                    <a data-act="pg_application_btn_fold" href="javascript:;" class="application" title="切换应用"
+
+                       style="display:none"
+
+                    ></a>
+                    <a data-act="pg_help_btn_fold" href="javascript:;" class="help" title="帮助"></a>
+                    <a data-act="pg_setting_btn_fold" href="javascript:;" class="setting" title="设置"></a>
+                </div>
+            </div>
+            <!--account-mgt end-->
+        </nav>
+
+        <div class="menu-thumbnail-box" style="display:none;">
+            <div class="arrow-left-wrap">
+                <div class="arrow-left-inside"></div>
+            </div>
+            <div class="menu-thumbnail-content">
+                <div class="menu-thumbnail-header">
+                    <h5></h5>
+                </div>
+                <div class="menu-thumbnail-body">
+                    <ul class="menu-thumbnail-list">
+                    </ul>
+                </div>
+            </div>
+        </div></aside>
+    <section class="main-content"  >
+        <header id="pagehead" class="header">
+            <div class="xsy_oa_detail_crumbs">
+                <ul class="xsy_oa_detail_path"></ul>
+            </div>
+            <ul class="function-btn">
+                <li id="globalSearch" class="page-topsec-box">
+                    <div class="page-topsec-area">
+                        <div class="page-topsec-inputbox">
+                            <input type="text" act="keyword" placeholder="搜索CRM数据、动态、话题等
+                        ">
+                            <a href="javascript:;" class="topsec-btn" act="input_search"></a>
+                        </div>
+                    </div>
+                </li>
+                <li id="globalNotice" class="notice">
+                    <a href="javascript:;" title="消息">
+                        <span href="javascript:;" class="announcement-notice"></span>
+                        <span class="announcement-new-tip" style="display:none;">0</span>
+                    </a>
+                </li>
+                <li id="oamenubar" class="btn-group" >
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" title="办公">
+                        <span class="oa-dropdown-toggle" href="javascript:;"></span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a id="oa_panel_toggler" href="javascript:;" title="展开办公面板">
+                        <span class="oa-slidebar-taggle" href="javascript:;"></span>
+                    </a>
+                </li> -->
+            </ul>
+            <div class="function_tool js-latest-update-tip-div hidden">
+                <a href="javascript:;" title="新功能" class="js-latest-update-tip menu_class function_add"><span>新功能</span></a>
+            </div>
+            <div class="new_remind js-latest-update-content hidden">
+                <a  onclick="$('.js-latest-update-content').hide();" href="javascript:void(0);" class="pop_close"></a>
+                <div class="pop_up new_remind_pop">
+                    <div class="loading"><span>加载中...</span></div>
+                </div>
+            </div>
+        </header>
+        <section id="pagecontent" class="wrapper-panel">
+            <div class="wrapper-panel-inner page-panel-inner">
+                <div id="crm-panel" class="crm-panel">
+                    <div id="div_container_content" class="container_content" rk-crm-init>
+                        <div class="large-loading" >
+                            <div id="floatingCirclesG">
+                                <div class="f_circleG" id="frotateG_01"></div>
+                                <div class="f_circleG" id="frotateG_02"></div>
+                                <div class="f_circleG" id="frotateG_03"></div>
+                                <div class="f_circleG" id="frotateG_04"></div>
+                                <div class="f_circleG" id="frotateG_05"></div>
+                                <div class="f_circleG" id="frotateG_06"></div>
+                                <div class="f_circleG" id="frotateG_07"></div>
+                                <div class="f_circleG" id="frotateG_08"></div>
+                            </div>
+                            <span>加载中...</span>
+                        </div></div>
+                    <div id="div_detail_frame" class="detail_frame" style="right:-821px;">
+                        <div class="detail_border"></div>
+                        <a href="javascript:;" class="to_top" style="display:none;" title="返回顶部"></a>
+                    </div>
+                    <div id="div_detail_frame_second" class="detail_frame" style="right:-821px;">
+                        <div class="detail_border"></div>
+                        <a href="javascript:;" class="to_top" style="display:none;" title="返回顶部"></a>
+                    </div>
+                    <div id="div_detail_frame_third" class="detail_frame" style="right:-821px;">
+                        <div class="detail_border"></div>
+                        <a href="javascript:;" class="to_top" style="display:none;" title="返回顶部"></a>
+                    </div>
+                    <div id="div_detail_frame_fouth" class="detail_frame" style="right:-821px;">
+                        <div class="detail_border"></div>
+                        <a href="javascript:;" class="to_top" style="display:none;" title="返回顶部"></a>
+                    </div>
+                    <div id="div_detail_frame_five" class="detail_frame" style="right:-821px;">
+                        <div class="detail_border"></div>
+                        <a href="javascript:;" class="to_top" style="display:none;" title="返回顶部"></a>
+                    </div>
+                    <div id="div_detail_frame_six" class="detail_frame" style="right:-821px;">
+                        <div class="detail_border"></div>
+                        <a href="javascript:;" class="to_top" style="display:none;" title="返回顶部"></a>
+                    </div>
+                </div>
+                <div id="rk-panel" class="rk-panel rk-panel-overflow rk-feedpanel-overflow">
+                    <div class="portal-panel">
+                        <div id="index_task_panel" class="portal-task-panel"></div>
+                        <div id="index_prm_panel" class="portal-prm-panel"></div>
+                        <div id="index_chart_panel" class="portal-chart-panel" style="margin-bottom:50px;"></div>
+                    </div>
+                    <div class="feed-panel page-feed-panel"></div>
+                </div>
+                <div id="oa-panel" class="oa-panel"></div>
+            </div>
+        </section>
+        <div id="oa-shade" class="oa-shade-div"></div>
+        <div id="notice_prompt" class="pg-system_prompt">
+            <div class="sucess">
+                <p></p>
+                <span class="hide"></span>
+            </div>
+            <div class="error">
+                <p></p>
+                <span class="hide"></span>
+            </div>
+        </div></section>
+</section>
+<div class="pg-pm-wrap" id="privatemsg" style="display:none;">
+    <div class="pg-pm-thumb" style="display:block;" title="企业微信">
+        <span class="title"></span>
+        <span class="num" style="display:none;"></span>
+    </div>
+</div>
+<script src="https://xsybucket.s3.cn-north-1.amazonaws.com.cn/%2F-101/FRONT_WEB/zh/%2F2017/12/13/d38e9f33-332e-400d-bc87-45cbb3221ab3.js"></script>
+<script src="https://rs.ingageapp.com/static/deploy/rk1.4d7ae43.js"></script>
+<script src="https://rs.ingageapp.com/static/hash.171222142638.js"></script>
+<script src="https://rs.ingageapp.com/static/rk-config.bc0c5ca.js"></script>
+<script src="https://rs.ingageapp.com/static/sea-config.71a9800.js"></script>
+<script src="https://rs.ingageapp.com/static/deploy/rk2.b34cb69.js"></script>
+<script src="https://rs.ingageapp.com/static/router.cdddde6.js"></script><!-- 百度统计 -->
+<script>
+    var _trc_=_trc_ || {}, _prm_=_prm_ || {};
+    function loadScript() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://webapi.amap.com/maps?v=1.3&key=242940e21d575db5ec2f2c0ff4daa6b0";
+        document.body.appendChild(script);
+
+        var script2 = document.createElement("script");
+        script2.type = "text/javascript";
+        script2.src = "//trac.imarvelous.cn/tracking.js?f23568b4b561d5d0bf501a0ee9cf79a3";
+        document.body.appendChild(script2);
+    }
+    window.onload = loadScript;
+</script>
+<script type='text/javascript'>
+    //growing io
+    var _vds = _vds || [];(function(){
+        _vds.push(['setAccountId', '2615cb47558b45ffb4da3f8ca1ad57a3']);
+        //_vds.push(['setOrigin', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'xiaoshouyi.growingio.com']);
+        if('880058' == '' && '326972' == ''){
+            return;
+        }
+        _vds.push(['setCS1','user_id','880058']);
+        _vds.push(['setCS2','tenant_id','326972']);
+        _vds.push(['setCS4','tenant_is_paid','false']);
+        if (jQuery.cookie('ads_agent_id')){
+            _vds.push(['setCS5','ads_agent_id',jQuery.cookie('ads_agent_id')]);
+        }
+
+        if (jQuery.cookie('ads_keywordid')){
+            _vds.push(['setCS6','ads_keywordid',jQuery.cookie('ads_keywordid')]);
+        }
+
+        (function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+</script>
+<script type="text/javascript">
+    try{
+        var send_track = function(cs_obj){
+            var url = document.URL;
+            var query = '';
+            if(url.indexOf("?")!=-1){
+                query = url.substring(url.indexOf("?")+1,url.length);
+            }
+            var eventTime = (new Date()).valueOf();
+            var eventType = 'page';
+            var domain = window.location.hostname;
+            var path = window.location.pathname;
+            var refer = document.referrer;
+            var platform = 'web';
+            var title = document.title;
+            var post_obj = {
+                'query': query,
+                'eventTime': eventTime,
+                'eventType': eventType,
+                'domain': domain,
+                'path': path,
+                'refer': refer,
+                'platform': platform,
+                'title': title
+            }
+            if(cs_obj){
+                jQuery.extend(post_obj, cs_obj);
+            }
+            jQuery.ajax({
+                url:'https://track.xiaoshouyi.com/api/ads_pv/',
+                type: 'POST',
+                data: post_obj,
+                //dataType: 'json',
+                //headers:{'Content-Type': 'application/x-www-form-urlencoded'}
+            });
+        }
+        var cs_o = {'cs1': 'user_id:880058', 'cs2': 'tenant_id:326972', 'cs4': 'tenant_is_paid:false'}
+        if (jQuery.cookie('ads_agent_id')){
+            cs_o['cs5'] = 'ads_agent_id:'+ jQuery.cookie('ads_agent_id');
+        }
+        if (jQuery.cookie('ads_keywordid')){
+            cs_o['cs6'] = 'ads_keywordid:'+ jQuery.cookie('ads_keywordid');
+        }
+        send_track(cs_o);
+    }catch(e){}
+</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./echarts.min.js"></script>
+    <script src="chengduData.js"></script>
+</head>
+<body>
+    <script>
+        // 基于准备好的dom，初始化echarts实例
+
+        echarts.registerMap('chengdu', chegndu);  //初始中国地图
+        var geoCoordMap = {
+            '住处': [104.114759,30.676522],
+            '29日行程：西岭雪山': [103.179416,30.620513],
+            '30日行程：都江堰': [103.620123,31.006857],
+            '1月1日行程：成都大熊猫基地': [104.150916,30.743319],
+            '四川大学(望江校区)': [104.088119,30.637545],
+            '电子科技大学(沙河校区)': [104.106714,30.681411],
+            '天府广场': [104.072329,30.66342],
+            '春熙路': [104.086074,30.659602],
+            '灌县古城': [103.629499,31.00113],
+            '九眼桥': [104.094579,30.644991],
+            '锦里': [104.056424,30.651723],
+            '宽窄巷子': [104.061614,30.669488],
+            '杜甫草堂': [104.034848,30.666397],
+            '双流机场': [103.961044,30.573554],
+            '青城山': [103.578829,30.903727],
+            '峨眉山旅游区': [103.447858,29.584531]
+        };
+        var BJData = [
+            [{
+                name: '29日行程：西岭雪山',
+                value: 100
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '30日行程：都江堰',
+                value: 80
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '灌县古城',
+                value: 60
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '1月1日行程：成都大熊猫基地',
+                value: 30
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '天府广场',
+                value: 30
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '春熙路',
+                value: 30
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '宽窄巷子',
+                value: 10
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '锦里',
+                value: 10
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '杜甫草堂',
+                value: 40
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '双流机场',
+                value: 60
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '四川大学(望江校区)',
+                value: 60
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '电子科技大学(沙河校区)',
+                value: 60
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '九眼桥',
+                value: 60
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '峨眉山旅游区',
+                value: 60
+            }, {
+                name: '住处'
+            }],
+            [{
+                name: '青城山',
+                value: 60
+            }, {
+                name: '住处'
+            }],
+        ];
+        var convertData = function(data) {
+            var res = [];
+            for (var i = 0; i < data.length; i++) {
+                var dataItem = data[i];
+                var fromCoord = geoCoordMap[dataItem[0].name];
+                var toCoord = geoCoordMap[dataItem[1].name];
+                if (fromCoord && toCoord) {
+                    res.push([{
+                        coord: fromCoord,
+                        value: dataItem[0].value
+                    }, {
+                        coord: toCoord,
+                    }]);
+                }
+            }
+            return res;
+        };
+
+        var color = ['#a6c84c', '#ffa022', '#46bee9'];
+        var series = [];
+        [
+            ['住处', BJData]
+        ].forEach(function(item, i) {
+            series.push(
+
+                {
+                    type: 'lines',
+                    zlevel: 2,
+                    effect: {
+                        show: true,
+                        period: 4,
+                        trailLength: 0.02,
+                        symbol: 'arrow',
+                        symbolSize: 5,
+                    },
+                    lineStyle: {
+                        normal: {
+                            width: 1,
+                            opacity: 0.6,
+                            curveness: 0.2
+                        }
+                    },
+
+                    data: convertData(item[1])
+                }, {
+                    type: 'effectScatter',
+                    coordinateSystem: 'geo',
+                    zlevel: 2,
+                    rippleEffect: {
+                        period: 4,
+                        brushType: 'stroke',
+                        scale: 4
+                    },
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'right',
+                            offset: [5, 0],
+                            formatter: '{b}'
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
+                    symbol: 'circle',
+                    symbolSize: function(val) {
+                        return 4 + val[2] / 10;
+                    },
+                    itemStyle: {
+                        normal: {
+                            show: false,
+                            color: '#f00'
+                        }
+                    },
+                    data: item[1].map(function(dataItem) {
+                        return {
+                            name: dataItem[0].name,
+                            value: geoCoordMap[dataItem[0].name].concat([dataItem[0].value])
+                        };
+                    }),
+                },
+                //被攻击点
+                {
+                    type: 'scatter',
+                    coordinateSystem: 'geo',
+                    zlevel: 2,
+                    rippleEffect: {
+                        period: 4,
+                        brushType: 'stroke',
+                        scale: 4
+                    },
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'right',
+                            //			                offset:[5, 0],
+
+                            color: '#00ffff',
+                            formatter: '{b}',
+                            textStyle: {
+                                color: "#00ffff"
+                            }
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
+                    symbol: 'pin',
+                    symbolSize: 30,
+                    itemStyle: {
+                        normal: {
+                            show: true,
+                            color: '#9966cc'
+                        }
+                    },
+                    data: [{
+                        name: item[0],
+                        value: geoCoordMap[item[0]].concat([100]),
+                    }],
+                }
+            );
+        });
+
+        var option = {
+            backgroundColor: '#404a59',
+            toolbox: {
+                feature: {
+                    dataZoom: {
+                        yAxisIndex: 'none'
+                    },
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            visualMap: {
+                min: 0,
+                max: 100,
+                calculable: true,
+                color: ['#ff3333', 'orange', 'yellow', 'lime', 'aqua'],
+                textStyle: {
+                    color: '#fff'
+                }
+            },
+            geo: {
+                map: 'chengdu',
+                label: {
+                    emphasis: {
+                        show: false
+                    }
+                },
+                roam: true,
+                layoutCenter: ['50%', '53%'],
+                layoutSize: "108%",
+                itemStyle: {
+                    normal: {
+                        color: 'rgba(51, 69, 89, .5)',
+                        borderColor: 'rgba(100,149,237,1)'
+                    },
+                    emphasis: {
+                        color: 'rgba(37, 43, 61, .5)'
+                    }
+                }
+            },
+
+            series: series
+        };
+
+        var myChart = echarts.init(document.getElementById('main'));
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

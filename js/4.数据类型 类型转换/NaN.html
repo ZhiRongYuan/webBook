@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+
+<script>
+
+// JS中的数据类型：数字（NaN）、字符串、布尔、函数、对象(obj、[]、{}、null)、未定义
+
+var a = Number('abc');
+// alert( a );			// NaN
+
+// NaN：not a number 不是个 数字 的 数字类型
+
+// alert( typeof (a) );			// number
+
+// 一旦写程序中出现：NaN  肯定进行了非法的运算操作
+// alert( '200px' -  100 );
+
+// NaN 是 false
+if( a ){
+	// alert( '真' );
+}else{
+	// alert( '假' );
+}
+
+var abc = [];
+// alert( abc === abc );				true
+
+// NaN 与自己都不相等！！
+alert( a === a );				// false
+
+
+
+// NaN：not a number 不是个 数字 的 数字类型
+// isNaN：Is not a number 是不是不是一个数字（不是数字）
+
+isNaN();					// true			false
+// 判断某些值是不是数字
+// 不喜欢数字、讨厌数字
+
+// alert( isNaN( function(){ alert(1) } ) );
+// alert( isNaN('250') );
+// Number()  '250' => 250 => false
+
+// alert( isNaN( [] ) );
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

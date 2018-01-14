@@ -1,3 +1,6 @@
+/*
+将中文转成拼音
+ */
 var Pinyin = (function (){
     var Pinyin = function (ops){
             this.initialize(ops);

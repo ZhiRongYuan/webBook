@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <script>
+        var ODiv1 = document.getElementById('div1');
+        ODiv1.style.styleFloat='left';  //（IE）
+        ODiv1.style.cssFloat='left'; // 非IE
+    </script>
+</body>
+</html>
